@@ -1,0 +1,38 @@
+<div class="search__card">
+    <div class="search__card-content">
+        <div class="search__card-row search__card-row--center">
+            <p-autoComplete [suggestions]="itemsForList" (completeMethod)="search($event.query)"
+                placeholder="Search an Item" field="title">
+            </p-autoComplete>
+        </div>
+
+        <p-dataView [value]="itemsForList">
+            <ng-template let-item pTemplate="listItem">
+                <div class="search__card search__card-row search">
+                    <div class="search__card-image" (click)="routeToItem(item.id)">
+                        <img [src]="item.imageUrl">
+                    </div>
+                    <div class="search__card-content margin_right">
+                        <div class="search__card-row search__card-row--between">
+                            <h3>{{item.title}}</h3>
+                            <div class="search__card-price">
+                                <p>{{item.price}}</p>
+                                <i class="bi bi-currency-euro icon"></i>
+                            </div>
+                        </div>
+                        <div class="search__card-row">
+                            <div class="search__card-rating">
+                                <i class="bi bi-star-fill icon"></i>
+                                <p>{{item.rating}}</p>
+                            </div>
+                            <div class="search__card-time">
+                                <i class="bi bi-clock icon"></i>
+                                <p>{{item.timeToPrepare.from}} - {{item.timeToPrepare.to}} mins</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataView>
+    </div>
+</div>

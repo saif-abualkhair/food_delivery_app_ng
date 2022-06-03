@@ -1,0 +1,51 @@
+{
+    "success": true,
+    "warning": false,
+    "message": "",
+    "data": [
+        {
+            "title": "Shying away",
+            "price": 7.5,
+            "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=902&amp;q=80",
+            "timeToPrepare": {
+                "from": 10,
+                "to": 20
+            },
+            "id": 1,
+            "rating": 4.5
+        },
+        {
+            "title": "Odds and Ends",
+            "price": 2.5,
+            "imageUrl": "https://images.unsplash.com/photo-1574448857443-dc1d7e9c4dad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1347&amp;q=80",
+            "timeToPrepare": {
+                "from": 10,
+                "to": 20
+            },
+            "id": 2,
+            "rating": 4
+        },
+        {
+            "title": "Shying away",
+            "price": 12.5,
+            "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80",
+            "timeToPrepare": {
+                "from": 10,
+                "to": 20
+            },
+            "id": 3,
+            "rating": 4.2
+        },
+        {
+            "title": "Shying away",
+            "price": 3,
+            "imageUrl": "https://images.unsplash.com/photo-1515467410840-96a3cf21dbea?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1490&amp;q=80",
+            "timeToPrepare": {
+                "from": 10,
+                "to": 20
+            },
+            "id": 4,
+            "rating": 4.4
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<div class="search__card" [ngStyle]="itemsForReturn?{'margin-bottom':'180px'}:{}">
+    <h3>{{itemsForReturn.title}}</h3>
+    <div class="search__card-image">
+        <img [src]="itemsForReturn.imageUrl">
+    </div>
+    <div class="search__card-content">
+        <div class="search__card-row search__card-row--center">
+            <div class="search__card-rating">
+                <i class="bi bi-star-fill icon"></i>
+                <p>{{itemsForReturn.rating}}</p>
+            </div>
+            <div class="search__card-time">
+                <i class="bi bi-clock icon"></i>
+                <p>{{itemsForReturn.timeToPrepare.from}} - {{itemsForReturn.timeToPrepare.to}} mins</p>
+            </div>
+            <div class="search__card-price">
+                <p>{{itemsForReturn.price}}</p>
+                <i class="bi bi-currency-euro icon"></i>
+            </div>
+        </div>
+        <div class="search__card-row search__card-row--center">
+            <div class="search__card-description">
+                <p>{{itemsForReturn.description}}</p>
+            </div>
+        </div>
+    </div>
+    <form [formGroup]="formGroup" (ngSubmit)="addToCart()">
+        <div class="search__card-row search__card-row--center">
+            <p-dropdown class="sizes" [options]="itemsForReturn.sizes" optionLabel="value" [formControlName]="'size'"
+                optionValue="id" placeholder="Size"></p-dropdown>
+        </div>
+        <div class="search__card-row search__card-row--center">
+            <p class="calculated_price">
+                {{calculatedPrice}}
+                <i class="bi bi-currency-euro icon"></i>
+            </p>
+        </div>
+        <div class="search__card-row search__card-row--center">
+            <p-inputNumber [showButtons]="true" class="sizes" buttonLayout="horizontal" [formControlName]="'quantity'"
+                inputId="horizontal" spinnerMode="horizontal" [step]="1"
+                decrementButtonClass="p-button-raised p-button-secondary p-button-text"
+                incrementButtonClass="p-button-raised p-button-secondary p-button-text" incrementButtonIcon="pi pi-plus"
+                [min]="1" decrementButtonIcon="pi pi-minus">
+            </p-inputNumber>
+        </div>
+
+        <div class="search__card-row search__card-row--center submit_button">
+            <button pButton pRipple type="submit" label="Add to Cart" icon="bi bi-cart"
+                class="p-button-raised p-button-secondary p-button-text">
+            </button>
+        </div>
+    </form>
+</div>

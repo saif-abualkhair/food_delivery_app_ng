@@ -1,0 +1,34 @@
+.mobile-frame__footer {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    /* for user button */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 10px 20px #888, 0px -10px 20px #cbc9c94e;
+}
+
+.app-icon {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    color: #a496a4;
+}
+
+.app-icon:hover {
+    color: #554d73;
+}
+
+.app-icon .icon {
+    height: 1em;
+    padding: 1em;
+}

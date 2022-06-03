@@ -1,0 +1,24 @@
+<div class="search__card" [ngStyle]="isLastItem?{'margin-bottom':'180px'}:{}">
+    <div class="search__card-image" (click)="routeToItem()">
+        <img [src]="itemForList.imageUrl">
+    </div>
+    <div class="search__card-content">
+        <div class="search__card-row search__card-row--between">
+            <h3>{{itemForList.title}}</h3>
+            <div class="search__card-price">
+                <p>{{itemForList.price}}</p>
+                <i class="bi bi-currency-euro icon"></i>
+            </div>
+        </div>
+        <div class="search__card-row">
+            <div class="search__card-rating">
+                <i class="bi bi-star-fill icon"></i>
+                <p>{{itemForList.rating}}</p>
+            </div>
+            <div class="search__card-time">
+                <i class="bi bi-clock icon"></i>
+                <p>{{itemForList.timeToPrepare.from}} - {{itemForList.timeToPrepare.to}} mins</p>
+            </div>
+        </div>
+    </div>
+</div>
