@@ -25,6 +25,10 @@ html {
   height: 30rem !important;
 }
 
-.p-listbox-list, .p-listbox,.p-listbox-list-wrapper {
+.p-listbox-list, .p-listbox, .p-listbox-list-wrapper {
   width: 100% !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
 }

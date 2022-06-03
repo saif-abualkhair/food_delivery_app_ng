@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SpinnerService } from 'src/app/services/spinner-service.service';
 @Component({
   selector: 'app-spinners',

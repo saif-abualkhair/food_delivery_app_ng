@@ -7,7 +7,7 @@
     background-color: rgba(247, 247, 247, 0.408);
     -webkit-backgdrop-filter: blur(0.1em);
     backdrop-filter: blur(.1em);
-    z-index: 999;
+    z-index: 4000;
 }
 
 .loader {

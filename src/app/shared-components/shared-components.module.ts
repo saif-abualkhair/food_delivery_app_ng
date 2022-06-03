@@ -9,11 +9,13 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import {DataViewModule} from 'primeng/dataview';
 import {SidebarModule} from 'primeng/sidebar';
 import {ListboxModule} from 'primeng/listbox';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
   declarations: [
-    SpinnersComponent
+    SpinnersComponent,
+    MapComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,8 @@ import {ListboxModule} from 'primeng/listbox';
     AutoCompleteModule,
     DataViewModule,
     SidebarModule,
-    ListboxModule
+    ListboxModule,
+    MapComponent
   ]
 })
 export class SharedComponentsModule { }

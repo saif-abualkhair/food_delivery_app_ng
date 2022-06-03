@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpinnerService } from 'src/app/services/spinner-service.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isAddressSideBarOnScreen: boolean = false;
   isMapSideBarOnScreen: boolean = false;
-  constructor() { }
+  constructor(private spinnerService: SpinnerService) { }
 
   ngOnInit(): void {
   }
@@ -21,8 +22,13 @@ export class HeaderComponent implements OnInit {
     this.isMapSideBarOnScreen = true
   }
 
-  onAddNewLocation(){
+  onAddNewLocation() {
     this.isAddressSideBarOnScreen = false;
+    this.spinnerService.toggleSpinner();
     this.showMap();
+  }
+
+  onCloseButton() {
+    this.isMapSideBarOnScreen = false
   }
 }

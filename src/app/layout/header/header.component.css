@@ -16,7 +16,7 @@
     margin-right: 0.5em;
     height: 1em;
     color: #a5a7bb;
-  }
+}
 
 .address-bar__address p {
     padding: 0;
@@ -31,8 +31,8 @@
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
-  }
-  
+}
+
 
 .hamburger span {
     height: 3px;
@@ -50,4 +50,9 @@
 .hamburger span:last-child {
     margin-bottom: 10px;
     max-width: 40%;
+}
+
+:host ::ng-deep .fullscreen_sidebar.p-sidebar .p-sidebar-content,
+:host ::ng-deep .fullscreen_sidebar.p-sidebar .p-sidebar-header {
+    padding: 0;
 }
