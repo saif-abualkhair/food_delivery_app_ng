@@ -37,6 +37,14 @@ h3{
     justify-content: space-between;
 }
 
+.search__card-row--center {
+    justify-content: center;
+    font-size: small;
+    color: #a5a7bb;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
 .search__card-price, .search__card-rating, .search__card-time {
     display: flex;
     align-items: center;
@@ -57,13 +65,7 @@ h3{
     color: #a5a7bb;
 }
 
-.search__card-row--center {
-    justify-content: center;
-    font-size: small;
-    color: #a5a7bb;
-    margin-right: 15px;
-    margin-left: 15px;
-}
+
 
 .margin_right{
     margin-left: 18px;

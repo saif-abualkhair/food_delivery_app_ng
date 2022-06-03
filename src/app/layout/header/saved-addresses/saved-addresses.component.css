@@ -1,0 +1,25 @@
+.search__card-row {
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.search__card-row--between {
+    justify-content: space-between;
+}
+
+.search__card-row--center {
+    justify-content: center;
+    font-size: small;
+    color: #a5a7bb;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.search__card {
+    margin: 2em 0;
+}
+
+.search_addresses_list{
+    width: 100% !important;
+}

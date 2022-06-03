@@ -1,0 +1,18 @@
+<div class="search__card">
+    <div class="search__card-content">
+        <div class="search__card-row search__card-row--center">
+            <h3>{{formGroup?.value.address?.name?formGroup?.value.address?.name:'Choose a Delivery Location'}}</h3>
+        </div>
+        <form [formGroup]="formGroup">
+            <div class="search__card-row search__card-row--center">
+                <p-listbox [formControlName]="'address'" [options]="cities" optionLabel="name"
+                    [class]="'search_addresses_list'"></p-listbox>
+            </div>
+        </form>
+        <div class="search__card-row search__card-row--center">
+            <button pButton pRipple type="button" (click)="onAddNewLocationClick()" label="Or Add a New Location" icon="bi bi-compass"
+                class="p-button-raised p-button-secondary p-button-text">
+            </button>
+        </div>
+    </div>
+</div>

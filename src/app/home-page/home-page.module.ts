@@ -5,11 +5,10 @@ import { HomePageRoutingModule } from './home-page-routing.module';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
-
 @NgModule({
   declarations: [
     ItemCardComponent,
-    HomePageComponent
+    HomePageComponent,
   ],
   imports: [
     CommonModule,

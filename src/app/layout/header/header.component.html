@@ -1,5 +1,5 @@
 <div class="mobile-frame__header">
-    <div class="address-bar">
+    <div class="address-bar" (click)="showSavedAddresses()">
         <div class="address-bar__dropdown"><svg aria-hidden="true" focusable="false" data-prefix="fas"
                 data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -13,3 +13,11 @@
     </div>
     <div class="hamburger"><span></span><span></span></div>
 </div>
+
+<p-sidebar [(visible)]="isAddressSideBarOnScreen" [showCloseIcon]="false" position="top">
+    <app-saved-addresses (onAddNewLocation)="onAddNewLocation()"></app-saved-addresses>
+</p-sidebar>
+
+<p-sidebar [(visible)]="isMapSideBarOnScreen" [fullScreen]="true">
+    hello
+</p-sidebar>

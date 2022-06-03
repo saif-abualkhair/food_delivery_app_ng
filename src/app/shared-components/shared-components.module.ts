@@ -7,6 +7,8 @@ import { ButtonModule } from 'primeng/button';
 import { SpinnersComponent } from './spinners/spinners.component';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import {DataViewModule} from 'primeng/dataview';
+import {SidebarModule} from 'primeng/sidebar';
+import {ListboxModule} from 'primeng/listbox';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import {DataViewModule} from 'primeng/dataview';
     ReactiveFormsModule,
     ButtonModule,
     AutoCompleteModule,
-    DataViewModule
+    DataViewModule,
+    SidebarModule,
+    ListboxModule
   ],
   exports: [
     DropdownModule,
@@ -31,7 +35,9 @@ import {DataViewModule} from 'primeng/dataview';
     ButtonModule,
     SpinnersComponent,
     AutoCompleteModule,
-    DataViewModule
+    DataViewModule,
+    SidebarModule,
+    ListboxModule
   ]
 })
 export class SharedComponentsModule { }

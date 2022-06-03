@@ -14,3 +14,17 @@ html {
 .p-inputnumber {
   width: 100%;
 }
+
+.p-component-overlay {
+  background-color: rgba(247, 247, 247, 0.408) !important;
+  -webkit-backgdrop-filter: blur(0.1em);
+  backdrop-filter: blur(.1em);
+}
+
+.p-sidebar-top {
+  height: 30rem !important;
+}
+
+.p-listbox-list, .p-listbox,.p-listbox-list-wrapper {
+  width: 100% !important;
+}
