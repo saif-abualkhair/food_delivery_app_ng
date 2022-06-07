@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
 
   onAddNewLocation() {
     this.isAddressSideBarOnScreen = false;
-    this.spinnerService.toggleSpinner();
+    // this.spinnerService.toggleSpinner();
     this.showMap();
   }
 

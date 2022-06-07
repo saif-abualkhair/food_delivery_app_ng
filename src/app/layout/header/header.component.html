@@ -19,5 +19,5 @@
 </p-sidebar>
 
 <p-sidebar [(visible)]="isMapSideBarOnScreen" [fullScreen]="true" [showCloseIcon]="false" [styleClass]="'fullscreen_sidebar'">
-    <app-map *ngIf = "isMapSideBarOnScreen" (onCloseButton)="onCloseButton()"></app-map>
+    <app-map (onCloseButton)="onCloseButton()" [isVisable] = "isMapSideBarOnScreen"></app-map>
 </p-sidebar>
